@@ -1,0 +1,31 @@
+{ "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [34.019602, -118.452416]},
+      "properties": {
+        "company-logo": "images/activision.png",
+        "company-name": "Activision Publishing Inc",
+        "company-location": "Santa Monica, California, United States",
+        "company-type": "AAA Publisher",
+        "company-projects": "Call of Duty, Destiny, Skylanders",
+        "company-platforms": "Console, PC, Mobile, Handheld",
+        "company-description": "Activision is a AAA 3rd party publisher. This is the corporate headquarters office for Activision publishing. Activision owns a variety of studios that develop games individually including Infinity Ward and Raven Software.",
+        "company-careers": "https://www.activision.com/careers"
+      }
+    },
+
+    { "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [34.028230, -118.471270]},
+      "properties": {
+        "company-logo": "images/naughtydog.png",
+        "company-name": "Naughty Dog Inc",
+        "company-location": "Santa Monica, California, United States",
+        "company-type": "AAA Developer",
+        "company-projects": "Uncharted, The Last of Us, Crash Bandicoot",
+        "company-platforms": "Console",
+        "company-description": "Naughty Dog is a first party AAA developer owned by Sony Computer Entertainment. Today, Naughty Dog primarily has focused on story driven action games and the ICE Team who develops the graphics technologies for Sony 1st party studios.",
+        "company-careers": "https://www.activision.com/careers"
+      }
+    }
+  ]
+}

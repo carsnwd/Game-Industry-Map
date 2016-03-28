@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Industry Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel=StyleSheet href="css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="navbar navbar-defualt navbar-fixed-top">
+    <a class="navbar-brand" href="#">Game Industry Map</a>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="From Software, Naughty Dog, Bethesda Game Studios, BreakAway Games..." id="query" name="query" value="">
+        <div class="input-group-btn">
+            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+    </div>
+</div>
+<div class='content-container'>
+    <div id="map"></div>
+    <div id="company-info">
+        <img src="images/activision.png" class="company-logo">
+        <ul><b>Name:</b> <span id="company-name">Activision Publishing Inc</span></ul>
+        <ul><b>Location:</b> <span id="company-location">Santa Monica, California, United States</span></ul>
+        <ul><b>Type: </b> <span id="company-type">AAA Publisher</span></ul>
+        <ul><b>Notable Projects: </b> <span id="company-projects">Call of Duty, Destiny, Skylanders</span></ul>
+        <ul><b>Platforms: </b><span id="company-platforms">Console, PC, Mobile, Handheld</span></ul>
+        <ul><b>Description: </b><span id="company-description">Activision is a AAA 3rd party publisher. This is the
+            corporate headquarters office for Activision publishing. Activision owns a variety of studios that develop
+            games individually including <a href="#">Infinity Ward</a> and <a href="#">Raven Software</a>.</span></ul>
+        <ul><button class="btn btn-default" onclick="window.open('https://www.activision.com/careers')">Careers Page <span class="glyphicon glyphicon-briefcase"></span></button>
+        </ul>
+    </div>
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMVl-Nh50HcsJa8XuEfrJRWOr8nivcDFg&callback=initMap"
+        type="text/javascript"></script>
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 34.029602, lng: -118.452416},
+            zoom: 13
+        });
+
+        map.data.loadGeoJson('data.json');
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</body>
+<footer>Created by <a href="http://www.carson.zone">Carson Wood</a>.</footer>
+</html>

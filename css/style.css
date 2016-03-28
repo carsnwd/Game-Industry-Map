@@ -1,0 +1,78 @@
+@import "palette.sass";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #455A64;
+}
+
+.navbar-defualt{
+    background-color: #607D8B;
+}
+
+.navbar-brand{
+    font-family: "Nimbus Sans L";
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 48px;
+    color: #FFC107;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.company-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.input-group{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+}
+
+.navbar-brand:hover{
+    color: #FFFFFF;
+}
+
+.content-container {
+    height: 75%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#map {
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+
+#company-info{
+    height: 100%;
+    width: 20%;
+    background-color: #607D8B;
+    float: left;
+    overflow: scroll;
+}
+
+#company-info ul{
+    margin-left: -10%;
+    color: #FFFFFF;
+}
+
+#company-info ul a:hover{
+    color: #727272;
+}
+
+#company-info ul a{
+    color: #FFC107;
+}
+
+footer {
+    text-align: center;
+}
